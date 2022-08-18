@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>მთავარი</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/font.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerbar flex-row">
+        <a href="index.html"
+          ><img
+            src="images/ზოოტოპია ქართული 2.png"
+            alt="zootpia"
+            class="pointer"
+        /></a>
+        <div class="menu-icon flex-column pointer">
+          <span class="m-icon"></span>
+          <span class="m-icon"></span>
+          <span class="m-icon"></span>
+        </div>
+        
+        <div class="side-icons flex-row">
+          <div class="search-icon flex-column pointer">
+            <img src="images/search.png" alt="search" />
+            <p>ძებნა</p>
+          </div>
+          <div class="cart-icon flex-column pointer">
+            <img src="images/shopping-cart.png" alt="shopping-cart" />
+            <p>კალათა</p>
+          </div>
+          <div class="sign-in flex-column pointer">
+            <img src="images/smile.png" alt="smile" />
+            <p>შესვლა</p>
+          </div>
+        </div>
+      </div>
+      <div id="modal"></div>
+    </header>
+    <main>
+      <section class="ad-swiper middle-container">
+        <div class="slide_1 active">
+          <img src="images/dog 1.jpg" alt="dog" class="cover" />
+          <div class="ad_info_div flex-row">
+            <button id="ad-swiper-left" class="arrow-btn">
+              <img src="images/arrow-long-left.jpg" alt="arrow" />
+            </button>
+            <div class="flex-column">
+              <p>მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</p>
+              <button class="buy-now-btn">შეიძინე ეხლავე</button>
+              <div class="square-btns flex-row">
+                <button class="ad-swipe-btn clicked-ad"></button>
+                <button class="ad-swipe-btn"></button>
+                <button class="ad-swipe-btn"></button>
+              </div>
+            </div>
+            <button id="ad-swiper-right" class="arrow-btn">
+              <img src="images/arrow-long-right.jpg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="services middle-container">
+        <div class="more_products">
+          <div class="service_infos">
+            <div class="brightness">
+              <img src="images/brightness-empty.jpg" alt="brightness logo" />
+            </div>
+            <p>პროდუქტების <span>ფართო</span> არჩევანი</p>
+          </div>
+        </div>
+        <div class="promocodes_system">
+          <div class="service_infos">
+            <div class="percentage">
+              <img src="images/percentage.jpg" alt="percentage logo" />
+            </div>
+            <p><span>პრომოკოდის</span> მარტივი სისტემა</p>
+          </div>
+        </div>
+        <div class="online_payment">
+          <div class="service_infos">
+            <div class="credit-card">
+              <img src="images/credit-card.jpg" alt="credit-card logo" />
+            </div>
+            <p>მარტივი <span>ონლაინ</span> გადახდა</p>
+          </div>
+        </div>
+        <div class="fast_delivery">
+          <div class="service_infos">
+            <div class="truck">
+              <img src="images/truck.jpg" alt="truck logo" />
+            </div>
+            <p>სწრაფი <span>მიტანის</span> სერვისი</p>
+          </div>
+        </div>
+      </section>
+      <section class="our_production middle-container">
+        <div class="dogpro">
+          <div class="warwera">
+            <p class="dzaglta-samkaro">ძაღლთა სამყარო</p>
+            <p class="shetavazeba">საუკეთესო არჩევანი<span>ერთგული მეგობრისთვის</span></p>
+            <button class="show-production">
+              <h5>პროდუქციის ნახვა</h5>
+            </button>
+          </div>
+          <img src="images/pug.png" alt="pug" class="pug" />
+        </div>
+        <div class="fishpro">
+          <div class="warwera">
+            <p class="shetavazeba">შეუქმენი სასიამოვნო <span>გარემო შენს თევზებს</span></p>
+            <button class="show-production">
+              <h5>პროდუქციის ნახვა</h5>
+            </button>
+          </div>
+          <img src="images/fish.png" alt="fish" class="fish" />
+        </div>
+        <div class="birdpro">
+          <div class="warwera">
+            <p class="shetavazeba"><span>ყველანაირი აქსესუარი </span>მფრინველებისათვის</p>
+            <button class="show-production">
+              <h5>პროდუქციის ნახვა</h5>
+            </button>
+          </div>
+          <img src="images/bird.png" alt="parrot" class="parrot" />
+        </div>
+        <div class="catpro">
+          <div class="warwera katebis-shetavazeba">
+            <p class="shetavazeba"><span>100% ნატურალური საკვები </span> თქვენი კატებისათვის</p>
+            <button class="show-production">
+              <h5>პროდუქციის ნახვა</h5>
+            </button>
+          </div>
+          <img src="images/kata1.png" alt="cat" class="cat" />
+          <img src="images/graycat.png" alt="cat" class="graycat" />
+          <div class="laqa"></div>
+        </div>
+      </section>
+      <section class="top_products middle-container">
+        <button id="top1-swiper-left" class="arrow-btn">
+          <img src="images/arrow-long-left.jpg" alt="arrow" />
+        </button>
+        <button id="top1-swiper-right" class="arrow-btn">
+          <img src="images/arrow-long-right.jpg" alt="arrow" />
+        </button>
+        <div class="headline flex-row">
+          <h3>ტოპ პროდუქცია</h3>
+          <a href="index.html">ყველას ნახვა</a>
+        </div>
+        <div class="produktebi">
+          <div class="top1pro">
+            <div class="sale-sign">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food1.png" alt="royal canin" class="foodimage"/>
+              <div class="food-info">
+                <h4>პედიგრი</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>600გრ.</button>
+                  <button>2კგ.</button>
+                  <button>5კგ.</button>
+                  <button>13კგ.</button>
+                </div>
+              </div>
+              <div class="wonis-fasi flex-row">
+                <div class="flex-row sale">
+                  <h6>135 ₾</h6>
+                  <p>160 ₾</p>
+                </div>
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="top1pro">
+            <div class="sale-sign vanish">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food2.png" alt="royal canin" class="foodimage" />
+              <div class="food-info">
+                <h4>Royal Canin</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>400გრ.</button>
+                  <button>8კგ.</button>
+                  <button>1 შეკვრა</button>
+                </div>
+              </div>
+              <div class="wonis-fasi flex-row">
+                <h6>140.45 ₾</h6>                
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>            
+          </div>
+          <div class="top1pro">
+            <div class="sale-sign vanish">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food3.png" alt="royal canin" class="foodimage"/>
+              <div class="food-info">
+                <h4>Royal Canin</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>400გრ.</button>
+                  <button>8კგ.</button>                  
+                </div>
+              </div>
+              <div class="wonis-fasi vanish">
+                <h6>140.45 ₾</h6>                
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>  
+            <div class="maragi-amoiwura">
+              <p>არ არის მარაგში</p>
+            </div>          
+          </div>
+          <div class="top1pro">
+            <div class="sale-sign vanish">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food4.png" alt="royal canin" class="foodimage"/>
+              <div class="food-info">
+                <h4>Royal Canin</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>5კგ.</button>
+                  <button>10კგ.</button>
+                </div>
+              </div>
+              <div class="damatebulia flex-row">
+                <h6>135 ₾</h6>                
+                <button >
+                  <p>დამატებულია</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="top1pro vanish">
+            <div class="sale-sign ">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food5.png" alt="royal canin" class="foodimage"/>
+              <div class="food-info">
+                <h4>პედიგრი</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>600გრ.</button>
+                  <button>2კგ.</button>
+                  <button>5კგ.</button>
+                  <button>10კგ.</button>
+                </div>
+              </div>
+              <div class="wonis-fasi flex-row">
+                <div class="flex-row sale">
+                  <h6>135 ₾</h6>
+                  <p>160 ₾</p>
+                </div>
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="more-sercive middle-container">
+        <img src="images/crd.png" alt="card" class="cardzoo">
+        <div class="baratebi">
+          <div class="pinkbox"></div>
+          <div class="orangebox"></div>
+          <div class="lurjirgoli"></div>
+          <div class="tetri"></div>
+          <div>
+          <h4>გამოიყენე ჩვენი, <span id="z"> ზ</span><span id="o">ო</span><span id="o2">ო</span><span id="t">ტ</span><span id="o3">ო</span><span id="p">პ</span><span id="i">ი</span><span id="a">ა</span><span id="s">ს</span> ბარათი</h4>
+        </div>
+        </div>
+        <div class="mgrgnelebi">
+          <div class="yviteli"></div>
+          <img src="images/shutterstock_1290392257.png" alt="rabbit">
+          <div class="produqciisnaxva">
+            <p>ყველაფერი</p>
+            <h4>მღრღნელებისთვის</h4>
+            <button class="show-production">
+              <h5>პროდუქციის ნახვა</h5>
+            </button>
+          </div>
+        </div>
+        <div class="gayidvadebi">
+          <div class="btn-most-paid">
+            <button id="most-swiper-left" class="arrow-btn-black">
+              <img src="images/image-arrow-left.png" alt="arrow"class="most-white-arrow" />
+            </button>
+            <button id="most-swiper-right" class="arrow-btn-black">
+              <img src="images/image-arrow-right.png" alt="arrow" class="most-white-arrow" />
+            </button>
+          </div>
+          <h4>ყველაზე გაყიდვადი პროდუქცია</h4>
+          <div class="moving_slider vanish">
+           <div class="fasi">
+             <h4>135 ₾</h4>
+             <p>160 ₾</p>
+           </div>
+           <div class="flex-column vanish">
+              <img src="images/food5.png" alt="dog food">
+              <p>პედიგრი</p>
+              <button class="show-production-black">
+               <h5>პროდუქციის ნახვა</h5>
+              </button>
+           </div>
+          </div>
+          <div class="moving_slider ">
+            <div class="fasi">
+              <h4>105 ₾</h4>
+              <p>70 ₾</p>
+            </div>
+            <div class="flex-column ">
+               <img src="images/food4.png" alt="dog food">
+               <p>Royal Canin</p>
+               <button class="show-production-black">
+                <h5>პროდუქციის ნახვა</h5>
+               </button>
+            </div>
+           </div>
+        </div>
+      </section>
+      <section class="last_add_products middle-container">
+        <button id="last-swiper-left" class="arrow-btn">
+          <img src="images/arrow-long-left.jpg" alt="arrow" />
+        </button>
+        <button id="last-swiper-right" class="arrow-btn">
+          <img src="images/arrow-long-right.jpg" alt="arrow" />
+        </button>
+        <div class="headline flex-row">
+          <h3>ბოლოს დამატებული</h3>
+          <a href="index.html">ყველას ნახვა</a>
+        </div>
+        <div class="produktebi">
+          <div class="top1pro">
+            <div class="sale-sign">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food1.png" alt="royal canin" class="foodimage"/>
+              <div class="food-info">
+                <h4>პედიგრი</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>600გრ.</button>
+                  <button>2კგ.</button>
+                  <button>5კგ.</button>
+                  <button>13კგ.</button>
+                </div>
+              </div>
+              <div class="wonis-fasi flex-row">
+                <div class="flex-row sale">
+                  <h6>135 ₾</h6>
+                  <p>160 ₾</p>
+                </div>
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="top1pro">
+            <div class="sale-sign vanish">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food2.png" alt="royal canin" class="foodimage" />
+              <div class="food-info">
+                <h4>Royal Canin</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>400გრ.</button>
+                  <button>8კგ.</button>
+                  <button>1 შეკვრა</button>
+                </div>
+              </div>
+              <div class="wonis-fasi flex-row">
+                <h6>140.45 ₾</h6>                
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>            
+          </div>
+          <div class="top1pro">
+            <div class="sale-sign vanish">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food3.png" alt="royal canin" class="foodimage" />
+              <div class="food-info">
+                <h4>Royal Canin</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>400გრ.</button>
+                  <button>8კგ.</button>                  
+                </div>
+              </div>
+            </div>  
+            <div class="maragi-amoiwura">
+              <p>არ არის მარაგში</p>
+            </div>          
+          </div>
+          <div class="top1pro">
+            <div class="sale-sign vanish">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food4.png" alt="royal canin"  class="foodimage"/>
+              <div class="food-info wona4">
+                <h4>Royal Canin</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona ">
+                  <button>5კგ.</button>
+                  <button>10კგ.</button>
+                </div>
+              </div>
+              <div class="wonis-fasi flex-row">
+                <h6>135 ₾</h6>                
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="top1pro vanish">
+            <div class="sale-sign vanish">
+              <img src="images/percentage-icon.png" alt="percentage" />
+            </div>
+            <div class="food">
+              <img src="images/food5.png" alt="royal canin" class="foodimage" />
+              <div class="food-info">
+                <h4>პედიგრი</h4>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="wona">
+                  <button>600გრ.</button>
+                  <button>2კგ.</button>
+                  <button>5კგ.</button>
+                  <button>10კგ.</button>
+                </div>
+              </div>
+              <div class="wonis-fasi flex-row">
+                <div class="flex-row sale">
+                  <h6>135 ₾</h6>
+                  <p>160 ₾</p>
+                </div>
+                <button class="chart-green">
+                  <img src="images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png" alt="shopping-cart">
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner-natural middle-container">
+        <img src="images/shutterstock_263854013.png" alt="turtle">
+        <div class="turtle-info">
+          <h1>100% ნატურალური პროდუქცია შენი საუკეთესო მეგობრისათვის</h1>
+          <button class="show-production">
+            <h5>პროდუქციის ნახვა</h5>
+          </button>
+        </div>
+      </section>
+      <section class="brands middle-container">
+        <button id="brand-swiper-left" >
+          <img src="images/arrow-long-left.jpg" alt="arrow" />
+        </button>
+        <button id="brand-swiper-right" >
+          <img src="images/arrow-long-right.jpg" alt="arrow" />
+        </button>
+        <div class="headline">
+          <h3>ბრენდები</h3>
+        </div>
+        <div class="brand-icons flex-row">
+          <img src="images/logo1.png" alt="brand-logo">
+          <img src="images/logo2.png" alt="brand-logo">
+          <img src="images/logo3.png" alt="brand-logo">
+          <img src="images/logo4.png" alt="brand-logo">
+          <img src="images/logo5.png" alt="brand-logo">
+          <img src="images/logo6.png" alt="brand-logo">
+        </div>
+        
+      </section> 
+    </main>
+    <footer>
+      <img
+        src="https://zootopia.ge/assets/client/img/potolileft.svg"
+        alt="leaf"
+        class="leaf-left"
+      />
+      <img
+        src="https://zootopia.ge/assets/client/img/potoliright.svg"
+        alt="leaf"
+        class="leaf-right"
+      />
+      <div class="down-categories middle-container flex-row">
+        <div class="agwera flex-column">
+          <img src="images/ზოოტოპია ქართული.png" alt="zootpia" />
+          <p class="agweris-text">
+            საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად
+            1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე
+            წიგნის საცდელი ეგზემპლარი დაბეჭდა.
+          </p>
+        </div>
+        <div class="kategoria">
+          <h5>კატეგორიები</h5>
+          <div class="chamonatvali flex-column">
+            <a href="">ძაღლები</a>
+            <a href="">კატები</a>
+            <a href="">თევზები</a>
+            <a href="">ფრინველები</a>
+            <a href="">მღრღნელები</a>
+            <a href="">რეპტილიები</a>
+          </div>
+        </div>
+        <div class="footermenu">
+          <h5>მენიუ</h5>
+          <div class="menu-chamonatvali flex-column">
+            <a href="index.html">მთავარი</a>
+            <a href="about_us.html">ჩვენ შესახებ</a>
+            <a href="">წესები და პირობები</a>
+            <a href="">ავტორიზაცია</a>
+            <a href="">რეგისტრაცია</a>
+            <a href="contact.html">კონტაქტი</a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h5>კონტაქტო</h5>
+          <div class="kontaqtis-chamonatvali flex-column">
+            <a href="">თბილისი, დადიასნი ქ. N:124</a>
+            <a href="tel:(+995) 555 333 222">(+995) 555 333 222</a>
+            <a href="mailto:example@gmail.com">example@gmail.com</a>
+          </div>
+          <div class="facebooklogo">
+            <a href="">
+              <img src="images/facebook-f.jpg" alt="facebook" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down">
+        <div class="footer-info flex-row middle-container">
+          <p class="ufleba">ყველა უფლება დაცულია</p>
+          <p>დამზადებულია <a href="https://smartweb.ge/">Smartweb</a>-ში</p>
+          <div class="flex-row logo-card">
+            <a href=""><img src="images/visa.png" alt="visacard" /></a>
+            <a href=""><img src="images/mastercard.png" alt="mastercard" /></a>
+            <a href=""><img src="images/Logo white.jpg" alt="TBC" /></a>
+          </div>
+        </div>
+        <div class="footer-item-left"></div>
+        <div class="footer-item-middle"></div>
+        <div class="footer-item-right"></div>
+      </div>
+    </footer>
+  </body>
+</html>
