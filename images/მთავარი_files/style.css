@@ -13,7 +13,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-.fade {
+.fade{
   opacity: 0.6;
 }
 li {
@@ -32,10 +32,10 @@ button {
   cursor: pointer;
   border: none;
 }
-.slide_1.active {
+.slide_1.active{
   display: block;
 }
-.moving_slider.active {
+.moving_slider.active{
   display: block;
 }
 
@@ -55,7 +55,7 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.moving_slider {
+.moving_slider{
   display: none;
 }
 header {
@@ -103,20 +103,7 @@ header {
   margin: auto;
 }
 .ad-swiper {
-  position: relative;
   margin: 70px auto;
-}
-#ad-swiper-left {
-  position: absolute;
-  top: 120px;
-  left: 35px;
-  z-index: 30;
-}
-#ad-swiper-right {
-  position: absolute;
-  top: 120px;
-  right: 35px;
-  z-index: 30;
 }
 .cover {
   max-width: 1186px;
@@ -133,20 +120,18 @@ header {
   box-shadow: 0px 0px 20px #597dbc1a;
   background: #ffffff 0% 0% no-repeat padding-box;
 }
-.slider-item {
+.slide_1 {
   position: relative;
-  display: none;
-}
-
-.slider-item.active{
-  display: block;
 }
 .ad_info_div {
   position: absolute;
-  top: 66px;
-  left: 421px;
+  top: 0px;
+  left: 35px;
+  gap: 346px;
+  bottom: 15px;
 }
 .ad_info_div p {
+  margin-top: 66px;
   margin-bottom: 30px;
   width: 344px;
   height: 82px;
@@ -166,9 +151,6 @@ header {
   opacity: 0.5;
 }
 .square-btns {
-  position: absolute;
-  bottom: 15px;
-  left: 559px;
   gap: 8px;
 }
 .clicked-ad {
@@ -399,10 +381,10 @@ h5 {
   font-size: 12px;
   width: 113px;
 }
-.produktebi a {
+.produktebi a{
   color: #111111;
 }
-.produktebi a:hover {
+.produktebi a:hover{
   font-weight: bold;
 }
 .top1pro {
@@ -423,7 +405,7 @@ h5 {
   border-radius: 4px;
   opacity: 1;
 }
-.lastpro {
+.lastpro{
   position: relative;
   background: #ffffff;
   box-shadow: 0px 0px 20px #597dbc0d;
@@ -1073,7 +1055,7 @@ iframe {
   font-size: 18px;
   line-height: 22px;
 }
-.sakontaqto_info a {
+.sakontaqto_info a{
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
