@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Amiran SP";
 }
 h1,
 h2,
@@ -63,8 +64,58 @@ header {
   margin: 0 auto;
   padding: 34px 45px;
   background-color: #ffffff;
+  z-index: 100;
   border-radius: 0px 0px 50px 50px;
 }
+.catface img {
+  width: 27px;
+  height: 24px;
+}
+.burgeri {
+  background: none;
+  width: 27px;
+  height: 24px;
+  transition-duration: 1s;
+  transform-origin: right;
+}
+.catface {
+  display: none;
+  background: none;
+  transition: linear;
+}
+.m-icon {
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #111111;
+  z-index: 10;
+  margin-bottom: 4px;
+}
+.menu-icon {
+  padding: 3px;
+}
+/* .menu-icon:hover .burgeri {
+  animation-name: gaqra;
+  /* display: none; */
+/* animation-timing-function: linear;
+}
+@keyframes gaqra {
+  0% {
+    width: 27px;
+  }
+  50% {
+    width: 12px;
+  }
+  100% {
+    width: 0;
+  }
+} */
+*/
+
+/* .menu-icon:hover .catface{
+  display: block;
+  z-index: 30;
+ } */
 
 .search-icon,
 .cart-icon,
@@ -85,15 +136,7 @@ header {
   font-size: 12px;
   line-height: 14px;
 }
-.m-icon {
-  width: 25px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #111111;
-  display: block;
-  margin-bottom: 4px;
-  z-index: 10;
-}
+
 .side-icons {
   gap: 30px;
 }
@@ -104,6 +147,7 @@ header {
 }
 .ad-swiper {
   position: relative;
+  z-index: 0;
   margin: 70px auto;
 }
 #ad-swiper-left {
@@ -138,7 +182,7 @@ header {
   display: none;
 }
 
-.slider-item.active{
+.slider-item.active {
   display: block;
 }
 .ad_info_div {
@@ -987,11 +1031,14 @@ footer {
 }
 .image-holder {
   background-color: #f5621f;
-  padding: 170px 462px;
+  max-width: 984px;
+  width: 100%;
   margin-top: 60px;
   margin-bottom: 65px;
+  text-align: center;
 }
 .image-holder img {
+  margin: 171px 0;
   width: 59px;
 }
 .informacia {
@@ -1039,7 +1086,7 @@ footer {
 
 iframe {
   max-width: 429px;
-  max-height: 400px;
+  height: 400px;
   width: 100%;
 }
 .sakontaqto {
@@ -1047,6 +1094,7 @@ iframe {
   width: 100%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
@@ -1078,4 +1126,378 @@ iframe {
   font-size: 18px;
   line-height: 22px;
   color: #111111;
+}
+.enebi {
+  display: none;
+}
+.headerJR {
+  display: none;
+  z-index: 50;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px -10px 30px #597dbc0d;
+}
+.bold {
+  font-weight: bold;
+}
+.green-a {
+  color: #74b42c;
+  font-size: 10px;
+  margin-top: 8px;
+}
+.green-menu {
+  width: 40px;
+  height: 40px;
+  background: #74b42c;
+  z-index: 0;
+  border-radius: 25px;
+  gap: 2px;
+}
+.green-menu div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 11px;
+}
+.men-icon {
+  width: 17px;
+  background-color: #ffffff;
+  height: 2px;
+  border-radius: 2px;
+  z-index: 10;
+  margin-bottom: 2px;
+}
+.greenbtns,
+.last_add_products-second {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* ჩვენ შესახებ */
+  .headerJR {
+    height: 60px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    max-width: 768px;
+    width: 100%;
+  }
+  .image-holder img {
+    margin: 35px auto;
+  }
+  .zooimg {
+    width: 106px;
+    height: 15px;
+  }
+  .menu-icon,
+  .side-icons,
+  .down-categories,
+  .footer-item-left,
+  .footer-item-middle,
+  .footer-item-right,
+  .leaf-right,
+  .leaf-left {
+    display: none;
+  }
+
+  .enebi {
+    display: block;
+  }
+  .kartuli {
+    margin-right: 5px;
+  }
+  .kartuli:hover {
+    font-weight: bold;
+  }
+  .english:hover {
+    font-weight: bold;
+  }
+  .kartuli,
+  .english {
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .footer-info {
+    flex-direction: column-reverse;
+  }
+  .logo-card {
+    margin-bottom: 85px;
+  }
+  .informacia h1 {
+    font-size: 18px;
+    margin-bottom: 21px;
+    line-height: 22px;
+  }
+  .ufleba {
+    margin-top: 8px;
+    margin-bottom: 100px;
+  }
+  footer {
+    position: relative;
+    overflow: visible;
+  }
+  .middle-container {
+    padding: 0px 23px;
+  }
+  .headerJR .flex-row {
+    margin: 10px auto;
+    justify-content: space-evenly;
+  }
+  .headerJR p {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  /* კონტაქტი */
+
+  .sakontaqto {
+    flex-direction: column;
+    margin-bottom: -170px;
+    margin-top: 50px;
+  }
+  .misamarti div,
+  .telefoni div,
+  .maili div,
+  .samushao-saati div {
+    width: 198px;
+    margin: 16px 0px 16px 32px;
+  }
+  .sakontaqto_info {
+    max-width: 256px;
+  }
+  .sakontaqto_info p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .sakontaqto_info a,
+  .sakontaqto_info h5 {
+    font-size: 14px;
+    line-height: 17px;
+    width: 150px;
+  }
+  iframe {
+    height: 260px;
+    padding: 0 32px;
+  }
+
+  /* მთავარი */
+  #ad-swiper-left,
+  #ad-swiper-right,
+  .buy-now-btn,
+  .graycat,
+  #top1-swiper-left,
+  #top1-swiper-right,
+  .headline a,
+  .last_add_products,
+  #brand-swiper-left,
+  #brand-swiper-right,
+  .orangebox {
+    display: none;
+  }
+  .ad_info_div {
+    top: 30%;
+    left: 25%;
+  }
+  .square-btns {
+    bottom: 15px;
+    left: 44%;
+    gap: 8px;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 70px;
+  }
+  .service_infos {
+    justify-content: center;
+    box-shadow: 0px 0px 20px #597dbc0d;
+  }
+  .service_infos p {
+    width: 117px;
+  }
+  .our_production {
+    max-width: 669px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .dogpro {
+    padding-top: 32px;
+    padding-left: 16px;
+  }
+  .dogpro,
+  .catpro {
+    height: 240px;
+  }
+  .fishpro,
+  .birdpro {
+    height: 180px;
+  }
+  .katebis-shetavazeba {
+    width: 258px;
+    margin: 42px auto;
+  }
+  .katebis-shetavazeba .show-production {
+    margin-left: 75px;
+    margin-top: 92px;
+  }
+
+  .shetavazeba {
+    font-size: 18px;
+    line-height: 17px;
+  }
+  .dogpro button {
+    margin-top: 56px;
+  }
+  .warwera span {
+    display: block;
+    font-size: 14px;
+  }
+  .fishpro div {
+    display: block;
+    margin-top: 23px;
+    margin-left: 20px;
+  }
+  .fishpro .show-production {
+    margin-top: 59px;
+    margin-left: 250px;
+  }
+  .greenbtns {
+    display: flex;
+  }
+  .greenbtn {
+    width: 6px;
+    height: 11px;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  .get-green {
+    background-color: #74b42c;
+  }
+  .produktebi {
+    grid-template-columns: repeat(1, 256px);
+    justify-content: center;
+  }
+  .top1pro {
+    display: none;
+  }
+  
+  .more-sercive {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 500px);
+  }
+  .cardzoo {
+    left: 20%;
+  }
+  .mgrgnelebi img {
+    left: 200px;
+  }
+  .last_add_products-second {
+    display: block;
+  }
+  .bolosdamatebuli {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #597dbc0d;
+    border: 1px solid #e7e7e74d;
+    border-radius: 10px;
+    opacity: 1;
+  }
+  .manypro {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .manypro img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .last_add_products-second .headline h3 {
+    font-size: 16px;
+  }
+  .metisnaxva {
+    padding: 14px 24px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    background: #111111 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  .banner-natural {
+    overflow: hidden;
+  }
+  .banner-natural img {
+    top: -30px;
+    left: 200px;
+  }
+  .brand-icons{
+    flex-direction: column;
+  }
+  .brand-logo{
+    display: none;
+  }
+  .vanish {
+    display: flex;
+  }
+  .brands{
+    margin-bottom: -141px;
+  }
+}
+@media (max-width: 600px) {
+  .ad_info_div p {
+    max-width: 200px;
+    font-size: 18px;
+  }
+  .fishpro .show-production {
+    margin-left: 75px;
+  }
+  .fish {
+    width: 120px;
+  }
+  .cat {
+    width: 132px;
+  }
+  .cardzoo {
+    left: 9%;
+  }
+  .mgrgnelebi img {
+    left: 30px;
+  }
+}
+@media (max-width: 400px) {
+  iframe {
+    height: 130px;
+  }
+  .ad_info_div p {
+    font-size: 14px;
+  }
+  .parrot {
+    width: 206px;
+  }
+  .fish {
+    width: 120px;
+  }
+  .pug {
+    width: 128px;
+  }
+  .cardzoo {
+    width: 300px;
+  }
+  .mgrgnelebi img {
+    left: -90px;
+  }
+  .last_add_products-second .headline h3 {
+    width: 182px;
+  }
+  .banner-natural img {
+    width: 200px;
+    top: 138px;
+    left: 150px;
+  }
 }

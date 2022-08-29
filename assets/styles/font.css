@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Amiran SP";
+  src: url("../fonts/AmiranSP.woff2") format("woff2"),
+    url("../fonts/AmiranSP.woff") format("woff"),
+    url("../fonts/AmiranSP.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ჩვენ შესახებ</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/font.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/font.css" />
   </head>
   <body>
     <header>
       <div class="headerbar flex-row">
         <a href="index.html"
           ><img
-            src="images/ზოოტოპია ქართული 2.png"
+            src="assets/images/ზოოტოპია ქართული 2.png"
             alt="zootpia"
-            class="pointer"
+            class="pointer zooimg"
         /></a>
         <div class="menu-icon flex-column pointer">
           <span class="m-icon"></span>
@@ -24,18 +24,22 @@
         </div>
         <div class="side-icons flex-row">
           <div class="search-icon flex-column pointer">
-            <img src="images/search.png" alt="search" />
+            <img src="assets/images/search.png" alt="search" />
             <p>ძებნა</p>
           </div>
           <div class="cart-icon flex-column pointer">
-            <img src="images/shopping-cart.png" alt="shopping-cart" />
+            <img src="assets/images/shopping-cart.png" alt="shopping-cart" />
             <p>კალათა</p>
             <span class="chart-count">0</span>
           </div>
           <div class="sign-in flex-column pointer">
-            <img src="images/smile.png" alt="smile" />
+            <img src="assets/images/smile.png" alt="smile" />
             <p>შესვლა</p>
           </div>
+        </div>
+        <div class="enebi">
+          <button class="kartuli">GEO</button>
+          <button class="english">ENG</button>
         </div>
       </div>
       <div id="modal"></div>
@@ -43,16 +47,16 @@
     <main>
       <section class="middle-container">
         <div class="navigacia">
-          <div class="mtavari"> <a href="index.html"> მთავარი</a></div>
-          <img src="images/angle-down.jpg" alt="arrow" />
+          <div class="mtavari"><a href="index.html"> მთავარი</a></div>
+          <img src="assets/images/angle-down.jpg" alt="arrow" />
           <div class="axlandeli"><a href="#">ჩვენ შესახებ</a></div>
         </div>
       </section>
       <section class="smaller-container">
         <div class="image-holder">
-          <img src="images/imgicon.png" alt="image" />
+          <img src="assets/images/imgicon.png" alt="image" />
         </div>
-        <div class="informacia">
+        <div class="informacia middle-container">
           <h1>საიდან მოდის ეს ტექსტი?</h1>
           <div>
             <p class="pirveli">
@@ -96,7 +100,7 @@
       />
       <div class="down-categories middle-container flex-row">
         <div class="agwera flex-column">
-          <img src="images/ზოოტოპია ქართული.png" alt="zootpia" />
+          <img src="assets/images/ზოოტოპია ქართული.png" alt="zootpia" />
           <p class="agweris-text">
             საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად
             1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე
@@ -134,7 +138,7 @@
           </div>
           <div class="facebooklogo">
             <a href="">
-              <img src="images/facebook-f.jpg" alt="facebook" />
+              <img src="assets/images/facebook-f.jpg" alt="facebook" />
             </a>
           </div>
         </div>
@@ -144,9 +148,11 @@
           <p class="ufleba">ყველა უფლება დაცულია</p>
           <p>დამზადებულია <a href="https://smartweb.ge/">Smartweb</a>-ში</p>
           <div class="flex-row logo-card">
-            <a href=""><img src="images/visa.png" alt="visacard" /></a>
-            <a href=""><img src="images/mastercard.png" alt="mastercard" /></a>
-            <a href=""><img src="images/Logo white.jpg" alt="TBC" /></a>
+            <a href=""><img src="assets/images/visa.png" alt="visacard" /></a>
+            <a href=""
+              ><img src="assets/images/mastercard.png" alt="mastercard"
+            /></a>
+            <a href=""><img src="assets/images/Logo white.jpg" alt="TBC" /></a>
           </div>
         </div>
         <div class="footer-item-left"></div>
@@ -154,6 +160,34 @@
         <div class="footer-item-right"></div>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <div class="headerJR">
+      <div class="flex-row">
+        <div class="sakhluka flex-column pointer">
+          <img src="assets/images/home-alt.png" alt="home" />
+          <a href="index.html" class="green-a">მთავარი</a>
+        </div>
+        <div class="search-icon flex-column pointer">
+          <img src="assets/images/search.png" alt="search" />
+          <p>ძებნა</p>
+        </div>
+        <button class="green-menu">
+          <div>
+            <span class="men-icon"></span>
+            <span class="men-icon"></span>
+            <span class="men-icon"></span>
+          </div>
+        </button>
+        <div class="cart-icon flex-column pointer">
+          <img src="assets/images/shopping-cart.png" alt="shopping-cart" />
+          <p>კალათა</p>
+          <span class="chart-count">0</span>
+        </div>
+        <div class="sign-in flex-column pointer">
+          <img src="assets/images/smile.png" alt="smile" />
+          <p>შესვლა</p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/app.js"></script>
   </body>
 </html>

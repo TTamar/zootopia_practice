@@ -38,7 +38,7 @@ function imageSlider() {
       });
 
       handleBallClick(nextIndex);
-      
+
       btn.classList.add("clicked-ad");
     });
   });
@@ -58,20 +58,14 @@ function showNextAd() {
     activeIndex = 0;
   }
   swipeMainSlider();
-  squareBtn.forEach((btn) => {
-    btn.classList.remove("clicked-ad");
-  });
 }
 function showPrevAd() {
   activeIndex = activeIndex - 1;
   if (activeIndex < 0) {
     activeIndex = mainSlides.length - 1;
   }
-  
+
   swipeMainSlider();
-  squareBtn.forEach((btn) => {
-    btn.classList.remove("clicked-ad");
-  });
 }
 function handleBallClick(nextIndex) {
   activeIndex = nextIndex;
@@ -222,3 +216,79 @@ function brandBackward() {
   }
   moveBrandsBack();
 }
+
+
+function moveitSwiper() {
+  topItems.forEach((item, i) => {
+    if (activeIndex === i) {
+      item.classList.add("vanish");
+    } else {
+      item.classList.remove("vanish");
+    }
+  });
+}
+function showNextProduct() {
+  activeIndex = activeIndex + 1;
+  if (activeIndex > topItems.length - 1) {
+    activeIndex = 0;
+  }
+  moveitSwiper();
+}
+function showPrevProduct() {
+  activeIndex = activeIndex - 1;
+  if (activeIndex < 0) {
+    activeIndex = topItems.length - 1;
+  }
+  moveitSwiper();
+}
+let touchstartX = 0;
+let touchendX = 0;
+
+function checkDirection() {
+  if (touchendX < touchstartX) alert(showNextProduct());
+  if (touchendX > touchstartX) alert(showPrevProduct());
+}
+
+
+
+function moveLogos() {
+  brandLogos.forEach((item, i) => {
+    if (activeIndex === i) {
+      item.classList.add("vanish");
+    } else {
+      item.classList.remove("vanish");
+    }
+  });
+}
+function moveLogosleft() {
+  activeIndex = activeIndex + 1;
+  if (activeIndex > brandLogos.length - 1) {
+    activeIndex = 0;
+  }
+  moveLogos();
+}
+function moveLogosright() {
+  activeIndex = activeIndex - 1;
+  if (activeIndex < 0) {
+    activeIndex = brandLogos.length - 1;
+  }
+  moveLogos();
+}
+
+function checkDirectionforlogos() {
+  if (touchendX < touchstartX) alert(moveLogosleft());
+  if (touchendX > touchstartX) alert(moveLogosright());
+}
+
+document.addEventListener("touchstart", (e) => {
+  touchstartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener("touchend", (e) => {
+  touchendX = e.changedTouches[0].screenX;
+  checkDirection() ;
+  checkDirectionforlogos();
+});
+
+
+
