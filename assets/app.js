@@ -19,6 +19,9 @@ const swipeRight = document.querySelector("#ad-swiper-right");
 const swipeLeft = document.querySelector("#ad-swiper-left");
 const squareBtn = document.querySelectorAll(".ad-swipe-btn");
 
+const brandArea = document.querySelector(".brands");
+const topArea = document.querySelector(".top_products")
+
 let activeIndex = 0;
 
 imageSlider();
@@ -217,6 +220,8 @@ function brandBackward() {
   moveBrandsBack();
 }
 
+let touchstartX = 0;
+let touchendX = 0;
 
 function moveitSwiper() {
   topItems.forEach((item, i) => {
@@ -241,14 +246,25 @@ function showPrevProduct() {
   }
   moveitSwiper();
 }
-let touchstartX = 0;
-let touchendX = 0;
+
 
 function checkDirection() {
-  if (touchendX < touchstartX) alert(showNextProduct());
-  if (touchendX > touchstartX) alert(showPrevProduct());
-}
+  if (touchendX < touchstartX) {
+    showNextProduct();
+  }
 
+  if (touchendX > touchstartX) {
+    showPrevProduct();
+  }
+}
+topArea.addEventListener("touchstart", (e) => {
+  touchstartX = e.changedTouches[0].screenX;
+});
+
+topArea.addEventListener("touchend", (e) => {
+  touchendX = e.changedTouches[0].screenX;
+  checkDirection();
+});
 
 
 function moveLogos() {
@@ -276,19 +292,19 @@ function moveLogosright() {
 }
 
 function checkDirectionforlogos() {
-  if (touchendX < touchstartX) alert(moveLogosleft());
-  if (touchendX > touchstartX) alert(moveLogosright());
+  if (touchendX < touchstartX) {
+    moveLogosright();
+  }
+  if (touchendX > touchstartX) {
+    moveLogosleft();
+  }
 }
 
-document.addEventListener("touchstart", (e) => {
+brandArea.addEventListener("touchstart", (e) => {
   touchstartX = e.changedTouches[0].screenX;
 });
 
-document.addEventListener("touchend", (e) => {
+brandArea.addEventListener("touchend", (e) => {
   touchendX = e.changedTouches[0].screenX;
-  checkDirection() ;
   checkDirectionforlogos();
 });
-
-
-
