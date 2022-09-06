@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>კონტაქტი</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/z-ka.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/font.css" />
   </head>
@@ -17,14 +22,11 @@
             alt="zootpia"
             class="pointer"
         /></a>
-        <div class="menu-icon  pointer">
+        <div class="menu-icon pointer">
           <button class="burgeri flex-column">
             <span class="m-icon"></span>
             <span class="m-icon"></span>
             <span class="m-icon"></span>
-          </button>
-          <button class="catface">
-            <img src="assets/images/cat-menu-icon.png" alt="cat-icon" />
           </button>
         </div>
         <div class="side-icons flex-row">
@@ -47,7 +49,6 @@
           <button class="english">ENG</button>
         </div>
       </div>
-      <div id="modal"></div>
     </header>
     <main>
       <section class="middle-container">
@@ -72,7 +73,11 @@
             <img src="assets/images/pin.png" alt="location" />
             <div class="misamarti">
               <p>მისამართი</p>
-              <a href="http://maps.google.com/?q=თბილისი, დადიანის ქ. 124" target="_blank">თბილისი, დადიანის ქ. N124</a>
+              <a
+                href="http://maps.google.com/?q=თბილისი, დადიანის ქ. 124"
+                target="_blank"
+                >თბილისი, დადიანის ქ. N124</a
+              >
             </div>
           </div>
           <div class="telefoni flex-row">
@@ -123,12 +128,12 @@
         <div class="kategoria">
           <h5>კატეგორიები</h5>
           <div class="chamonatvali flex-column">
-            <a href="">ძაღლები</a>
-            <a href="">კატები</a>
-            <a href="">თევზები</a>
-            <a href="">ფრინველები</a>
-            <a href="">მღრღნელები</a>
-            <a href="">რეპტილიები</a>
+            <a href="dogs.html">ძაღლები</a>
+            <a href="dogs.html">კატები</a>
+            <a href="dogs.html">თევზები</a>
+            <a href="dogs.html">ფრინველები</a>
+            <a href="dogs.html">მღრღნელები</a>
+            <a href="dogs.html">რეპტილიები</a>
           </div>
         </div>
         <div class="footermenu">
@@ -145,7 +150,11 @@
         <div class="footer-contact">
           <h5>კონტაქტო</h5>
           <div class="kontaqtis-chamonatvali flex-column">
-            <a href="http://maps.google.com/?q=თბილისი, დადიანის ქ. 124" target="_blank">თბილისი, დადიანის ქ. N124</a>
+            <a
+              href="http://maps.google.com/?q=თბილისი, დადიანის ქ. 124"
+              target="_blank"
+              >თბილისი, დადიანის ქ. N124</a
+            >
             <a href="tel:(+995) 555 333 222">(+995) 555 333 222</a>
             <a href="mailto:example@gmail.com">example@gmail.com</a>
           </div>
@@ -162,7 +171,9 @@
           <p>დამზადებულია <a href="https://smartweb.ge/">Smartweb</a>-ში</p>
           <div class="flex-row logo-card">
             <a href=""><img src="assets/images/visa.png" alt="visacard" /></a>
-            <a href=""><img src="assets/images/mastercard.png" alt="mastercard" /></a>
+            <a href=""
+              ><img src="assets/images/mastercard.png" alt="mastercard"
+            /></a>
             <a href=""><img src="assets/images/Logo white.jpg" alt="TBC" /></a>
           </div>
         </div>
@@ -196,6 +207,390 @@
         <div class="sign-in flex-column pointer">
           <img src="assets/images/smile.png" alt="smile" />
           <p>შესვლა</p>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="vanish">
+      <div class="modalcontent">
+        <div class="contentfor-menu">
+          <div class="modal-header">
+            <div class="flex-row modal-navigacia">
+              <a href="index.html">მთავარი</a>
+              <a href="about_us.html">ჩვენ შესახებ</a>
+              <a href="contact.html">კონტაქტი</a>
+            </div>
+            <button class="catface">
+              <img src="assets/images/cat-menu-icon.png" alt="cat-icon" />
+            </button>
+            <div class="enebi_kontaqti flex-row">
+              <div class="modal-enebi">
+                <button class="kart">GEO</button>
+                <button class="eng">ENG</button>
+              </div>
+              <div class="modal-kontaqti">
+                <a href="tel:(+995) 555 333 222" class="nom"
+                  >(+995) 555 333 222</a
+                >
+                <a href="mailto:example@gmail.com" class="mail"
+                  >example@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modalsearch">
+            <form action="search">
+              <input
+                type="text"
+                placeholder="ძაღლის საკვები"
+                class="liveSearch"
+              />
+              <button class="searchbtn">
+                <img src="assets/images/search.png" alt="search" />
+              </button>
+            </form>
+          </div>
+          <div class="modal-categoriebi">
+            <div class="categoriebi flex-row">
+                <button class="nav-tipebi mwvane">ძაღლები</button>
+                <button class="nav-tipebi">კატები</button>
+                <button class="nav-tipebi">თევზები</button>
+                <button class="nav-tipebi">ფრინველები</button>
+                <button class="nav-tipebi">მღრღნელები</button>
+                <button class="nav-tipebi">რეპტილიები</button>
+            </div>
+            <div class="cxovelebistvis">
+              <div class="dzaglebi choose  ">
+                <img src="assets/images/pug.png" alt="pug" />
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="">საქციელის კორეკტირება</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="katebi choose vanish">
+                <img src="assets/images/katebis-kata.png" alt="cat" />
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="">საქციელის კორეკტირება</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tevzebi choose vanish">
+                <img src="assets/images/tevzi.png" alt="fish" />
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="">საქციელის კორეკტირება</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="frinvelebi choose vanish">
+                <img src="assets/images/bird.png" alt="fish" />
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="">საქციელის კორეკტირება</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mgrgneli choose vanish">
+                <img src="assets/images/tagunia.png" alt="fish" />
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="">საქციელის კორეკტირება</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="reptiliebi choose vanish">
+                <img src="assets/images/qameleoni.png" alt="fish" />
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="">საქციელის კორეკტირება</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="meoreDone">მეორე დონე</h3>
+                  <ul>
+                    <li><a href="">კატების საფხაჭუნოები</a></li>
+                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="">მაკრატლები</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

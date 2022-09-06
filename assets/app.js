@@ -20,9 +20,81 @@ const swipeLeft = document.querySelector("#ad-swiper-left");
 const squareBtn = document.querySelectorAll(".ad-swipe-btn");
 
 const brandArea = document.querySelector(".brands");
-const topArea = document.querySelector(".top_products")
+const topArea = document.querySelector(".top_products");
+
+const menuModal = document.getElementById("modal");
+const menuBtn = document.querySelector(".burgeri");
+const closeBtn = document.querySelector(".catface");
+
+const typeBtns = document.querySelectorAll(".nav-tipebi");
+const chosenCategory = document.querySelectorAll(".choose");
+
+const proBtn = document.querySelectorAll(".pedigree-btn");
+const pedigreeImg = document.querySelectorAll(".pedigree");
+
+
+
+menuBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeModal);
+function openMenu() {
+  menuModal.classList.remove("vanish");
+}
+function closeModal() {
+  menuModal.classList.add("vanish");
+}
 
 let activeIndex = 0;
+clickNchoose();
+
+function clickNchoose() {
+  typeBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      typeBtns.forEach((btn) => {
+        btn.classList.remove("mwvane");
+      });
+      handleChoosing(index);
+      btn.classList.add("mwvane");
+    });
+  });
+}
+
+function chooseCategory() {
+  chosenCategory.forEach((item, i) => {
+    if (activeIndex === i) {
+      item.classList.remove("vanish");
+    } else {
+      item.classList.add("vanish");
+    }
+  });
+}
+function handleChoosing(index) {
+  activeIndex = index;
+  chooseCategory();
+}
+
+clickNGet()
+function clickNGet() {
+  proBtn.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      getPedigree(index);
+    });
+  });
+}
+
+function showPedigree() {
+  pedigreeImg.forEach((item, i) => {
+    if (activeIndex === i) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+}
+function getPedigree(index) {
+  activeIndex = index;
+  showPedigree();
+}
+
 
 imageSlider();
 initSlider();
@@ -31,8 +103,8 @@ productSwipe();
 brandSlider();
 
 function imageSlider() {
-  swipeRight.addEventListener("click", showNextAd);
-  swipeLeft.addEventListener("click", showPrevAd);
+  swipeRight?.addEventListener("click", showNextAd);
+  swipeLeft?.addEventListener("click", showPrevAd);
 
   squareBtn.forEach((btn, nextIndex) => {
     btn.addEventListener("click", () => {
@@ -76,8 +148,8 @@ function handleBallClick(nextIndex) {
 }
 
 function initSlider() {
-  nextBtn.addEventListener("click", showNextImg);
-  preBtn.addEventListener("click", showPrevImg);
+  nextBtn?.addEventListener("click", showNextImg);
+  preBtn?.addEventListener("click", showPrevImg);
 }
 
 function moveSwiper() {
@@ -116,8 +188,8 @@ function showPrevImg() {
 }
 
 function secondSlider() {
-  lastRightBtn.addEventListener("click", showNextItem);
-  lastLeftBtn.addEventListener("click", showPrevItem);
+  lastRightBtn?.addEventListener("click", showNextItem);
+  lastLeftBtn?.addEventListener("click", showPrevItem);
 }
 function moveLastitemSwiper() {
   lastItems.forEach((item, i) => {
@@ -154,8 +226,8 @@ function showPrevItem() {
   moveLastitemSwiperback();
 }
 function productSwipe() {
-  mostRightBtn.addEventListener("click", showNextPop);
-  mostLeftBtn.addEventListener("click", showPrevPop);
+  mostRightBtn?.addEventListener("click", showNextPop);
+  mostLeftBtn?.addEventListener("click", showPrevPop);
 }
 function moveSlider() {
   popularItems.forEach((item, i) => {
@@ -182,8 +254,8 @@ function showPrevPop() {
 }
 
 function brandSlider() {
-  brandRight.addEventListener("click", brandForward);
-  brandLeft.addEventListener("click", brandBackward);
+  brandRight?.addEventListener("click", brandForward);
+  brandLeft?.addEventListener("click", brandBackward);
 }
 function moveBrandsforward() {
   brandLogos.forEach((item, i) => {
@@ -247,7 +319,6 @@ function showPrevProduct() {
   moveitSwiper();
 }
 
-
 function checkDirection() {
   if (touchendX < touchstartX) {
     showNextProduct();
@@ -257,15 +328,14 @@ function checkDirection() {
     showPrevProduct();
   }
 }
-topArea.addEventListener("touchstart", (e) => {
+topArea?.addEventListener("touchstart", (e) => {
   touchstartX = e.changedTouches[0].screenX;
 });
 
-topArea.addEventListener("touchend", (e) => {
+topArea?.addEventListener("touchend", (e) => {
   touchendX = e.changedTouches[0].screenX;
   checkDirection();
 });
-
 
 function moveLogos() {
   brandLogos.forEach((item, i) => {
@@ -300,11 +370,54 @@ function checkDirectionforlogos() {
   }
 }
 
-brandArea.addEventListener("touchstart", (e) => {
+brandArea?.addEventListener("touchstart", (e) => {
   touchstartX = e.changedTouches[0].screenX;
 });
 
-brandArea.addEventListener("touchend", (e) => {
+brandArea?.addEventListener("touchend", (e) => {
   touchendX = e.changedTouches[0].screenX;
   checkDirectionforlogos();
 });
+
+const seeTextBtn = document.querySelector("#drop-down");
+const hideTextBtn = document.querySelector("#drop-up");
+const textArea = document.querySelector(".bigtext")
+
+seeTextBtn?.addEventListener("click", () => {
+  textArea.classList.add("seetext"),
+  seeTextBtn.classList.add("vanish")
+  hideTextBtn.classList.remove("vanish")
+})
+
+hideTextBtn?.addEventListener("click", () => {
+  textArea.classList.remove("seetext"),
+  seeTextBtn.classList.remove("vanish")
+  hideTextBtn.classList.add("vanish")
+})
+
+const minSlider = document.getElementById('min');
+const maxSlider = document.getElementById('max');
+
+const outputMin = document.getElementById('min-value');
+const outputMax = document.getElementById('max-value');
+
+outputMin.innerHTML = minSlider.value;
+outputMax.innerHTML = maxSlider.value;
+
+minSlider.oninput = function(){
+ outputMin.innerHTML=this.value;    
+}
+
+maxSlider.oninput = function(){
+ outputMax.innerHTML=this.value;    
+}
+
+
+
+
+
+
+const productSpace = document.getElementById("forproduct");
+const navLine = document.querySelector(".product-navigation");
+
+
