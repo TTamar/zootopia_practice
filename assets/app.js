@@ -413,8 +413,16 @@ maxSlider.oninput = function(){
 }
 
 
+const sideBar = document.querySelector(".sidebar")
+const showFilter = document.querySelector(".filter")
+const filterProduct = document.querySelector("#filter")
 
-
+showFilter?.addEventListener("click", () => {
+  sideBar.classList.add("active")
+})
+filterProduct?.addEventListener("click", () => {
+  sideBar.classList.remove("active")
+})
 
 
 const productSpace = document.getElementById("forproduct");

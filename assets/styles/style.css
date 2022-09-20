@@ -1227,6 +1227,7 @@ footer {
   gap: 15px;
   font-weight: bold;
   margin-top: 60px;
+  flex-wrap: wrap;
 }
 .axlandeli a {
   font-size: 14px;
@@ -1332,6 +1333,10 @@ iframe {
   margin-top: 60px;
   margin-bottom: 130px;
   align-items: flex-start;
+  gap: 26px;
+}
+.food-images {
+  gap: 26px;
 }
 .image-btn img {
   object-fit: cover;
@@ -1570,8 +1575,11 @@ input[type="checkbox"] {
   outline: none;
   float: left;
 }
+.filter {
+  display: none;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* ჩვენ შესახებ */
   .headerJR {
     height: 60px;
@@ -1579,7 +1587,7 @@ input[type="checkbox"] {
     position: fixed;
     bottom: 0;
     left: 0;
-    max-width: 768px;
+    max-width: 1024px;
     width: 100%;
   }
   .image-holder img {
@@ -1780,7 +1788,7 @@ input[type="checkbox"] {
     grid-template-columns: repeat(1, 256px);
     justify-content: center;
   }
-  .top1pro {
+  .last_add_products {
     display: none;
   }
 
@@ -1843,11 +1851,71 @@ input[type="checkbox"] {
   .brand-logo {
     display: none;
   }
-  .vanish {
+  .brand-logo.vanish {
     display: flex;
   }
   .brands {
     margin-bottom: -141px;
+  }
+  /* პროდუქტი */
+  .produkciis-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .food-images {
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  .image-btn {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .additional-info {
+    flex-direction: column;
+  }
+  .product-navigation a:hover {
+    color: #111111;
+  }
+
+  .production-listing {
+    display: flex;
+    flex-direction: column;
+  }
+  .products {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .wona {
+    width: 250px;
+  }
+}
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+  .filter {
+    display: block;
+    width: 256px;
+    height: 55px;
+    padding: 20px 30px;
+    box-shadow: 0px 10px 30px #597dbc0d;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin: 0 auto 20px auto;
+  }
+  .filter div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar.active{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 600px) {
@@ -1870,8 +1938,22 @@ input[type="checkbox"] {
   .mgrgnelebi img {
     left: 30px;
   }
+  .image-btn img {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+  }
+  .product-images img {
+    object-fit: cover;
+    width: 290px;
+    height: 290px;
+  }
 }
 @media (max-width: 400px) {
+  .headerJR {
+    max-width: 400px;
+    width: 100%;
+  }
   iframe {
     height: 130px;
   }
@@ -1896,9 +1978,17 @@ input[type="checkbox"] {
   .last_add_products-second .headline h3 {
     width: 182px;
   }
+  .banner-natural {
+    width: 263px;
+  }
   .banner-natural img {
     width: 200px;
     top: 138px;
     left: 150px;
+  }
+  .product-images img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
   }
 }
