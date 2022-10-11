@@ -590,7 +590,7 @@ header {
   border-radius: 6px;
   opacity: 1;
 }
-h5 {
+.produqciis-naxva {
   font-size: 12px;
   width: 113px;
 }
@@ -671,16 +671,16 @@ h5 {
 .wonis-fasi {
   margin-top: 19px;
 }
-.wonis-fasi h6 {
+.wonis-fasi .phasi {
   font-size: 24px;
 }
-.sale h6 {
+.sale .phasi {
   color: #f5621f;
 }
 .sale {
   align-items: flex-end;
 }
-.sale p {
+.sale .lined {
   font-size: 11px;
   color: #111111;
   text-decoration-line: line-through;
@@ -900,10 +900,6 @@ h5 {
   padding-top: 43px;
   padding-left: 40px;
 }
-.produqciisnaxva p {
-  font-size: 18px;
-  line-height: 29px;
-}
 .produqciisnaxva h4 {
   font-size: 24px;
   line-height: 29px;
@@ -941,7 +937,7 @@ h5 {
   line-height: 28px;
   margin: 20px 20px 0 41px;
 }
-.fasi p {
+.fasi .lined {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;

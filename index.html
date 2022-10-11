@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="zootopia online shop" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="TTamar" />
+    <meta
+      property="og:url"
+      content="https://ttamar.github.io/zootopia_practice1/"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="zootopia online shop" />
+    <meta
+      property="og:description"
+      content="Easy way to shop for your little friends"
+    />
+    <meta
+      property="og:image"
+      content="https://bucketeer-06ddb2e0-9e6b-41fd-887f-2e5fabcd2cc6.s3.amazonaws.com/bf8b57f7-25f6-431d-9923-c9644a6b634c.jpeg"
+    />
     <title>მთავარი</title>
     <link
       rel="shortcut icon"
@@ -18,12 +36,12 @@
       <div class="headerbar flex-row">
         <a href="index.html"
           ><img
-            src="assets/images/ზოოტოპია ქართული 2.png"
+            src="assets/images/ზოოტოპია ქართული 2.avif"
             alt="zootpia"
             class="pointer"
         /></a>
         <div class="menu-icon pointer">
-          <button class="burgeri flex-column">
+          <button title="buttonTitle" class="burgeri flex-column">
             <span class="m-icon"></span>
             <span class="m-icon"></span>
             <span class="m-icon"></span>
@@ -45,36 +63,44 @@
           </div>
         </div>
         <div class="enebi">
-          <button class="kartuli">GEO</button>
-          <button class="english">ENG</button>
+          <button title="buttonTitle" class="kartuli">GEO</button>
+          <button title="buttonTitle" class="english">ENG</button>
         </div>
       </div>
     </header>
     <main>
       <section class="middle-container">
         <div class="product-navigation">
-          <div class="mtavari"><a href="about_us.html">ჩვენ შესახებ</a>
-          <img src="assets/images/angle-down.jpg" alt="arrow" /></div>
-          <div class="mtavari"><a href="contact.html">კონტაქტი</a>
-          <img src="assets/images/angle-down.jpg" alt="arrow" /></div>
-          <div class="mtavari"><a href="dogs.html">კატეგორიები</a>
-          <img src="assets/images/angle-down.jpg" alt="arrow" /></div>
+          <div class="mtavari">
+            <a href="about_us.html">ჩვენ შესახებ</a>
+            <img src="assets/images/angle-down.jpg" alt="arrow" />
+          </div>
+          <div class="mtavari">
+            <a href="contact.html">კონტაქტი</a>
+            <img src="assets/images/angle-down.jpg" alt="arrow" />
+          </div>
+          <div class="mtavari">
+            <a href="dogs.html">კატეგორიები</a>
+            <img src="assets/images/angle-down.jpg" alt="arrow" />
+          </div>
           <div class="mtavari"><a href="product.html">პროდუქტი</a></div>
         </div>
       </section>
       <section class="ad-swiper middle-container">
-        <button id="ad-swiper-left" class="arrow-btn">
+        <button title="buttonTitle" id="ad-swiper-left" class="arrow-btn">
           <img src="assets/images/arrow-long-left.jpg" alt="arrow" />
         </button>
-        <button id="ad-swiper-right" class="arrow-btn">
+        <button title="buttonTitle" id="ad-swiper-right" class="arrow-btn">
           <img src="assets/images/arrow-long-right.jpg" alt="arrow" />
         </button>
         <div class="slider-item active">
-          <img src="assets/images/dog 1.jpg" alt="dog" class="cover" />
+          <img src="assets/images/dog 1.avif" alt="dog" class="cover" />
           <div class="ad_info_div flex-row">
             <div class="flex-column">
               <p>მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</p>
-              <button class="buy-now-btn">შეიძინე ეხლავე</button>
+              <button title="buttonTitle" class="buy-now-btn">
+                შეიძინე ეხლავე
+              </button>
             </div>
           </div>
         </div>
@@ -83,7 +109,9 @@
           <div class="ad_info_div flex-row">
             <div class="flex-column">
               <p>მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</p>
-              <button class="buy-now-btn">შეიძინე ეხლავე</button>
+              <button title="buttonTitle" class="buy-now-btn">
+                შეიძინე ეხლავე
+              </button>
             </div>
           </div>
         </div>
@@ -92,14 +120,16 @@
           <div class="ad_info_div flex-row">
             <div class="flex-column">
               <p>მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</p>
-              <button class="buy-now-btn">შეიძინე ეხლავე</button>
+              <button title="buttonTitle" class="buy-now-btn">
+                შეიძინე ეხლავე
+              </button>
             </div>
           </div>
         </div>
         <div class="square-btns flex-row">
-          <button class="ad-swipe-btn"></button>
-          <button class="ad-swipe-btn"></button>
-          <button class="ad-swipe-btn"></button>
+          <button title="buttonTitle" class="ad-swipe-btn"></button>
+          <button title="buttonTitle" class="ad-swipe-btn"></button>
+          <button title="buttonTitle" class="ad-swipe-btn"></button>
         </div>
       </section>
       <section class="services middle-container">
@@ -146,97 +176,101 @@
             <p class="shetavazeba">
               საუკეთესო არჩევანი<span>ერთგული მეგობრისთვის</span>
             </p>
-            <button class="show-production">
-              <h5>პროდუქციის ნახვა</h5>
+            <button title="buttonTitle" class="show-production">
+              <p class="produqciis-naxva">პროდუქციის ნახვა</p>
             </button>
           </div>
-          <img src="assets/images/pug.png" alt="pug" class="pug" />
+          <img src="assets/images/pug.avif" alt="pug" class="pug" />
         </div>
         <div class="fishpro">
           <div class="warwera">
             <p class="shetavazeba">
               შეუქმენი სასიამოვნო <span>გარემო შენს თევზებს</span>
             </p>
-            <button class="show-production">
-              <h5>პროდუქციის ნახვა</h5>
+            <button title="buttonTitle" class="show-production">
+              <p class="produqciis-naxva">პროდუქციის ნახვა</p>
             </button>
           </div>
-          <img src="assets/images/fish.png" alt="fish" class="fish" />
+          <img src="assets/images/fish.avif" alt="fish" class="fish" />
         </div>
         <div class="birdpro">
           <div class="warwera">
             <p class="shetavazeba">
               <span>ყველანაირი აქსესუარი </span>მფრინველებისათვის
             </p>
-            <button class="show-production">
-              <h5>პროდუქციის ნახვა</h5>
+            <button title="buttonTitle" class="show-production">
+              <p class="produqciis-naxva">პროდუქციის ნახვა</p>
             </button>
           </div>
-          <img src="assets/images/bird.png" alt="parrot" class="parrot" />
+          <img src="assets/images/bird.avif" alt="parrot" class="parrot" />
         </div>
         <div class="catpro">
           <div class="warwera katebis-shetavazeba">
             <p class="shetavazeba">
               <span>100% ნატურალური საკვები </span> თქვენი კატებისათვის
             </p>
-            <button class="show-production">
-              <h5>პროდუქციის ნახვა</h5>
+            <button title="buttonTitle" class="show-production">
+              <p class="produqciis-naxva">პროდუქციის ნახვა</p>
             </button>
           </div>
-          <img src="assets/images/kata1.png" alt="cat" class="cat" />
-          <img src="assets/images/graycat.png" alt="cat" class="graycat" />
+          <img src="assets/images/kata1.avif" alt="cat" class="cat" />
+          <img src="assets/images/graycat.avif" alt="cat" class="graycat" />
           <div class="laqa"></div>
         </div>
       </section>
       <section class="top_products middle-container">
-        <button id="top1-swiper-left" class="arrow-btn fade">
+        <button
+          title="buttonTitle"
+          id="top1-swiper-left"
+          class="arrow-btn fade"
+        >
           <img src="assets/images/arrow-long-left.jpg" alt="arrow" />
         </button>
-        <button id="top1-swiper-right" class="arrow-btn">
+        <button title="buttonTitle" id="top1-swiper-right" class="arrow-btn">
           <img src="assets/images/arrow-long-right.jpg" alt="arrow" />
         </button>
         <div class="headline flex-row">
           <h3>ტოპ პროდუქცია</h3>
           <a href="index.html">ყველას ნახვა</a>
           <div class="greenbtns">
-            <button class="greenbtn get-green"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn get-green"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
           </div>
         </div>
         <div class="produktebi">
           <div class="top1pro">
             <div class="sale-sign top-sale-sign">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food1.png"
+                  src="assets/images/food1.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">პედიგრი</a>
+                <a href="product.html">პედიგრი</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>600გრ.</button>
-                  <button>2კგ.</button>
-                  <button>5კგ.</button>
-                  <button>13კგ.</button>
+                  <button title="buttonTitle">600გრ.</button>
+                  <button title="buttonTitle">2კგ.</button>
+                  <button title="buttonTitle">5კგ.</button>
+                  <button title="buttonTitle">13კგ.</button>
                 </div>
               </div>
               <div class="wonis-fasi flex-row">
                 <div class="flex-row sale">
-                  <h6>135 ₾</h6>
-                  <p>160 ₾</p>
+                  <p class="phasi">135 ₾</p>
+                  <p class="lined">160 ₾</p>
                 </div>
-                <button class="chart-green">
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -245,29 +279,29 @@
           </div>
           <div class="top1pro">
             <div class="sale-sign top-sale-sign vanish">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food2.png"
+                  src="assets/images/food2.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">Royal Canin</a>
+                <a href="product.html">Royal Canin</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>400გრ.</button>
-                  <button>8კგ.</button>
-                  <button>1 შეკვრა</button>
+                  <button title="buttonTitle">400გრ.</button>
+                  <button title="buttonTitle">8კგ.</button>
+                  <button title="buttonTitle">1 შეკვრა</button>
                 </div>
               </div>
               <div class="wonis-fasi flex-row">
-                <h6>140.45 ₾</h6>
-                <button class="chart-green">
+                <p class="phasi">140.45 ₾</p>
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -276,28 +310,28 @@
           </div>
           <div class="top1pro">
             <div class="sale-sign top-sale-sign vanish">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food3.png"
+                  src="assets/images/food3.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">Royal Canin</a>
+                <a href="product.html">Royal Canin</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>400გრ.</button>
-                  <button>8კგ.</button>
+                  <button title="buttonTitle">400გრ.</button>
+                  <button title="buttonTitle">8კგ.</button>
                 </div>
               </div>
               <div class="wonis-fasi vanish">
-                <h6>140.45 ₾</h6>
-                <button class="chart-green">
+                <p class="phasi">140.45 ₾</p>
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -309,26 +343,26 @@
           </div>
           <div class="top1pro">
             <div class="sale-sign top-sale-sign vanish">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food4.png"
+                  src="assets/images/food4.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">Royal Canin</a>
+                <a href="product.html">Royal Canin</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>5კგ.</button>
-                  <button>10კგ.</button>
+                  <button title="buttonTitle">5კგ.</button>
+                  <button title="buttonTitle">10კგ.</button>
                 </div>
               </div>
               <div class="damatebulia flex-row">
-                <h6>135 ₾</h6>
-                <button>
+                <p class="phasi">135 ₾</p>
+                <button title="buttonTitle">
                   <p>დამატებულია</p>
                 </button>
               </div>
@@ -336,33 +370,33 @@
           </div>
           <div class="top1pro vanish">
             <div class="sale-sign top-sale-sign">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food5.png"
+                  src="assets/images/food5.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">პედიგრი</a>
+                <a href="product.html">პედიგრი</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>600გრ.</button>
-                  <button>2კგ.</button>
-                  <button>5კგ.</button>
-                  <button>10კგ.</button>
+                  <button title="buttonTitle">600გრ.</button>
+                  <button title="buttonTitle">2კგ.</button>
+                  <button title="buttonTitle">5კგ.</button>
+                  <button title="buttonTitle">10კგ.</button>
                 </div>
               </div>
               <div class="wonis-fasi flex-row">
                 <div class="flex-row sale">
-                  <h6>135 ₾</h6>
-                  <p>160 ₾</p>
+                  <p class="phasi">135 ₾</p>
+                  <p class="lined">160 ₾</p>
                 </div>
-                <button class="chart-green">
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -372,7 +406,7 @@
         </div>
       </section>
       <section class="more-sercive middle-container">
-        <img src="assets/images/crd.png" alt="card" class="cardzoo" />
+        <img src="assets/images/crd.avif" alt="card" class="cardzoo" />
         <div class="baratebi">
           <div class="pinkbox"></div>
           <div class="orangebox"></div>
@@ -389,25 +423,33 @@
         </div>
         <div class="mgrgnelebi">
           <div class="yviteli"></div>
-          <img src="assets/images/shutterstock_1290392257.png" alt="rabbit" />
+          <img src="assets/images/shutterstock_1290392257.avif" alt="rabbit" />
           <div class="produqciisnaxva">
             <p>ყველაფერი</p>
             <h4>მღრღნელებისთვის</h4>
-            <button class="show-production">
-              <h5>პროდუქციის ნახვა</h5>
+            <button title="buttonTitle" class="show-production">
+              <p class="produqciis-naxva">პროდუქციის ნახვა</p>
             </button>
           </div>
         </div>
         <div class="gayidvadebi">
           <div class="btn-most-paid">
-            <button id="most-swiper-left" class="arrow-btn-black">
+            <button
+              title="buttonTitle"
+              id="most-swiper-left"
+              class="arrow-btn-black"
+            >
               <img
                 src="assets/images/image-arrow-left.png"
                 alt="arrow"
                 class="most-white-arrow"
               />
             </button>
-            <button id="most-swiper-right" class="arrow-btn-black">
+            <button
+              title="buttonTitle"
+              id="most-swiper-right"
+              class="arrow-btn-black"
+            >
               <img
                 src="assets/images/image-arrow-right.png"
                 alt="arrow"
@@ -422,10 +464,10 @@
               <p>160 ₾</p>
             </div>
             <div class="flex-column vanish">
-              <img src="assets/images/food5.png" alt="dog food" />
+              <img src="assets/images/food5.avif" alt="dog food" />
               <p>პედიგრი</p>
-              <button class="show-production-black">
-                <h5>პროდუქციის ნახვა</h5>
+              <button title="buttonTitle" class="show-production-black">
+                <p class="produqciis-naxva">პროდუქციის ნახვა</p>
               </button>
             </div>
           </div>
@@ -435,20 +477,24 @@
               <p>70 ₾</p>
             </div>
             <div class="flex-column">
-              <img src="assets/images/food4.png" alt="dog food" />
+              <img src="assets/images/food4.avif" alt="dog food" />
               <p>Royal Canin</p>
-              <button class="show-production-black">
-                <h5>პროდუქციის ნახვა</h5>
+              <button title="buttonTitle" class="show-production-black">
+                <p class="produqciis-naxva">პროდუქციის ნახვა</p>
               </button>
             </div>
           </div>
         </div>
       </section>
       <section class="last_add_products middle-container">
-        <button id="last-swiper-left" class="arrow-btn fade">
+        <button
+          title="buttonTitle"
+          id="last-swiper-left"
+          class="arrow-btn fade"
+        >
           <img src="assets/images/arrow-long-left.jpg" alt="arrow" />
         </button>
-        <button id="last-swiper-right" class="arrow-btn">
+        <button title="buttonTitle" id="last-swiper-right" class="arrow-btn">
           <img src="assets/images/arrow-long-right.jpg" alt="arrow" />
         </button>
         <div class="headline flex-row">
@@ -458,33 +504,33 @@
         <div class="produktebi">
           <div class="lastpro">
             <div class="sale-sign last-sale-sign">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food1.png"
+                  src="assets/images/food1.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">პედიგრი</a>
+                <a href="product.html">პედიგრი</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>600გრ.</button>
-                  <button>2კგ.</button>
-                  <button>5კგ.</button>
-                  <button>13კგ.</button>
+                  <button title="buttonTitle">600გრ.</button>
+                  <button title="buttonTitle">2კგ.</button>
+                  <button title="buttonTitle">5კგ.</button>
+                  <button title="buttonTitle">13კგ.</button>
                 </div>
               </div>
               <div class="wonis-fasi flex-row">
                 <div class="flex-row sale">
-                  <h6>135 ₾</h6>
-                  <p>160 ₾</p>
+                  <p class="phasi">135 ₾</p>
+                  <p class="lined">160 ₾</p>
                 </div>
-                <button class="chart-green">
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -493,29 +539,29 @@
           </div>
           <div class="lastpro">
             <div class="sale-sign last-sale-sign vanish">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food2.png"
+                  src="assets/images/food2.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">Royal Canin</a>
+                <a href="product.html">Royal Canin</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>400გრ.</button>
-                  <button>8კგ.</button>
-                  <button>1 შეკვრა</button>
+                  <button title="buttonTitle">400გრ.</button>
+                  <button title="buttonTitle">8კგ.</button>
+                  <button title="buttonTitle">1 შეკვრა</button>
                 </div>
               </div>
               <div class="wonis-fasi flex-row">
-                <h6>140.45 ₾</h6>
-                <button class="chart-green">
+                <p class="phasi">140.45 ₾</p>
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -524,21 +570,21 @@
           </div>
           <div class="lastpro">
             <div class="sale-sign last-sale-sign vanish">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food3.png"
+                  src="assets/images/food3.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">Royal Canin</a>
+                <a href="product.html">Royal Canin</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>400გრ.</button>
-                  <button>8კგ.</button>
+                  <button title="buttonTitle">400გრ.</button>
+                  <button title="buttonTitle">8კგ.</button>
                 </div>
               </div>
             </div>
@@ -548,28 +594,28 @@
           </div>
           <div class="lastpro">
             <div class="sale-sign last-sale-sign vanish">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food4.png"
+                  src="assets/images/food4.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info wona4">
-                <a href="">Royal Canin</a>
+                <a href="product.html">Royal Canin</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>5კგ.</button>
-                  <button>10კგ.</button>
+                  <button title="buttonTitle">5კგ.</button>
+                  <button title="buttonTitle">10კგ.</button>
                 </div>
               </div>
               <div class="wonis-fasi flex-row">
-                <h6>135 ₾</h6>
-                <button class="chart-green">
+                <p class="phasi">135 ₾</p>
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -578,33 +624,33 @@
           </div>
           <div class="lastpro vanish">
             <div class="sale-sign last-sale-sign vanish">
-              <img src="assets/images/percentage-icon.png" alt="percentage" />
+              <img src="assets/images/percentage-icon.avif" alt="percentage" />
             </div>
             <div class="food">
-              <a href=""
+              <a href="product.html"
                 ><img
-                  src="assets/images/food5.png"
+                  src="assets/images/food5.avif"
                   alt="royal canin"
                   class="foodimage"
               /></a>
               <div class="food-info">
-                <a href="">პედიგრი</a>
+                <a href="product.html">პედიგრი</a>
                 <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
                 <div class="wona">
-                  <button>600გრ.</button>
-                  <button>2კგ.</button>
-                  <button>5კგ.</button>
-                  <button>10კგ.</button>
+                  <button title="buttonTitle">600გრ.</button>
+                  <button title="buttonTitle">2კგ.</button>
+                  <button title="buttonTitle">5კგ.</button>
+                  <button title="buttonTitle">10კგ.</button>
                 </div>
               </div>
               <div class="wonis-fasi flex-row">
                 <div class="flex-row sale">
-                  <h6>135 ₾</h6>
-                  <p>160 ₾</p>
+                  <p class="phasi">135 ₾</p>
+                  <p class="lined">160 ₾</p>
                 </div>
-                <button class="chart-green">
+                <button title="buttonTitle" class="chart-green">
                   <img
-                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.png"
+                    src="assets/images/transparent-basket-icon-online-icon-social-market-icon-5d9f98dbdab5d4.3019521615707404438958.avif"
                     alt="shopping-cart"
                   />
                 </button>
@@ -614,11 +660,11 @@
         </div>
       </section>
       <section class="banner-natural middle-container">
-        <img src="assets/images/shutterstock_263854013.png" alt="turtle" />
+        <img src="assets/images/shutterstock_263854013.avif" alt="turtle" />
         <div class="turtle-info">
           <h1>100% ნატურალური პროდუქცია შენი საუკეთესო მეგობრისათვის</h1>
-          <button class="show-production">
-            <h5>პროდუქციის ნახვა</h5>
+          <button title="buttonTitle" class="show-production">
+            <p class="produqciis-naxva">პროდუქციის ნახვა</p>
           </button>
         </div>
       </section>
@@ -626,39 +672,37 @@
         <div class="headline flex-row">
           <h3>ბოლოს დამატებული</h3>
           <div class="greenbtns">
-            <button class="greenbtn get-green"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
-            <button class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn get-green"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
+            <button title="buttonTitle" class="greenbtn"></button>
           </div>
         </div>
         <div class="bolosdamatebuli flex-column">
           <div class="manypro flex-row">
-            <a href=""><img src="assets/images/food1.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food2.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food4.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food3.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food5.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food1.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food2.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food4.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food3.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food5.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food1.png" alt="dogfood" /></a>
-            <a href=""><img src="assets/images/food3.png" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food1.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food2.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food4.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food3.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food5.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food1.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food2.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food4.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food3.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food5.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food1.avif" alt="dogfood" /></a>
+            <a href="product.html"><img src="assets/images/food3.avif" alt="dogfood" /></a>
           </div>
-          <a href="" class="metisnaxva">
-            მეტი პროდუქტის ნახვა
-          </a>
+          <a href="product.html" class="metisnaxva"> მეტი პროდუქტის ნახვა </a>
         </div>
       </section>
       <section class="brands middle-container">
-        <button id="brand-swiper-left" class="fade">
+        <button title="buttonTitle" id="brand-swiper-left" class="fade">
           <img src="assets/images/arrow-long-left.jpg" alt="arrow" />
         </button>
-        <button id="brand-swiper-right">
+        <button title="buttonTitle" id="brand-swiper-right">
           <img src="assets/images/arrow-long-right.jpg" alt="arrow" />
         </button>
         <div class="headline">
@@ -666,7 +710,7 @@
         </div>
         <div class="brand-icons flex-row">
           <img
-            src="assets/images/logo1.png"
+            src="assets/images/logo1.avif"
             alt="brand-logo"
             class="brand-logo"
           />
@@ -676,27 +720,27 @@
             class="brand-logo"
           />
           <img
-            src="assets/images/logo3.png"
+            src="assets/images/logo3.avif"
             alt="brand-logo"
             class="brand-logo"
           />
           <img
-            src="assets/images/logo4.png"
+            src="assets/images/logo4.avif"
             alt="brand-logo"
             class="brand-logo"
           />
           <img
-            src="assets/images/logo5.png"
+            src="assets/images/logo5.avif"
             alt="brand-logo"
             class="brand-logo"
           />
           <img
-            src="assets/images/logo6.png"
+            src="assets/images/logo6.avif"
             alt="brand-logo"
             class="brand-logo"
           />
           <img
-            src="assets/images/logo3.png"
+            src="assets/images/logo3.avif"
             alt="brand-logo"
             class="brand-logo vanish"
           />
@@ -739,21 +783,21 @@
           <div class="menu-chamonatvali flex-column">
             <a href="index.html">მთავარი</a>
             <a href="about_us.html">ჩვენ შესახებ</a>
-            <a href="">წესები და პირობები</a>
-            <a href="">ავტორიზაცია</a>
-            <a href="">რეგისტრაცია</a>
+            <a href="product.html">წესები და პირობები</a>
+            <a href="product.html">ავტორიზაცია</a>
+            <a href="product.html">რეგისტრაცია</a>
             <a href="contact.html">კონტაქტი</a>
           </div>
         </div>
         <div class="footer-contact">
           <h5>კონტაქტო</h5>
           <div class="kontaqtis-chamonatvali flex-column">
-            <a href="">თბილისი, დადიასნი ქ. N:124</a>
+            <a href="product.html">თბილისი, დადიასნი ქ. N:124</a>
             <a href="tel:(+995) 555 333 222">(+995) 555 333 222</a>
             <a href="mailto:example@gmail.com">example@gmail.com</a>
           </div>
           <div class="facebooklogo">
-            <a href="">
+            <a href="facebook.com">
               <img src="assets/images/facebook-f.jpg" alt="facebook" />
             </a>
           </div>
@@ -764,11 +808,11 @@
           <p class="ufleba">ყველა უფლება დაცულია</p>
           <p>დამზადებულია <a href="https://smartweb.ge/">Smartweb</a>-ში</p>
           <div class="flex-row logo-card">
-            <a href=""><img src="assets/images/visa.png" alt="visacard" /></a>
-            <a href=""
+            <a href="product.html"><img src="assets/images/visa.png" alt="visacard" /></a>
+            <a href="product.html"
               ><img src="assets/images/mastercard.png" alt="mastercard"
             /></a>
-            <a href=""><img src="assets/images/Logo white.jpg" alt="TBC" /></a>
+            <a href="product.html"><img src="assets/images/Logo white.jpg" alt="TBC" /></a>
           </div>
         </div>
         <div class="footer-item-left"></div>
@@ -786,7 +830,7 @@
           <img src="assets/images/search.png" alt="search" />
           <p>ძებნა</p>
         </div>
-        <button class="green-menu">
+        <button title="buttonTitle" class="green-menu">
           <div>
             <span class="men-icon"></span>
             <span class="men-icon"></span>
@@ -813,13 +857,13 @@
               <a href="about_us.html">ჩვენ შესახებ</a>
               <a href="contact.html">კონტაქტი</a>
             </div>
-            <button class="catface">
+            <button title="buttonTitle" class="catface">
               <img src="assets/images/cat-menu-icon.png" alt="cat-icon" />
             </button>
             <div class="enebi_kontaqti flex-row">
               <div class="modal-enebi">
-                <button class="kart">GEO</button>
-                <button class="eng">ENG</button>
+                <button title="buttonTitle" class="kart">GEO</button>
+                <button title="buttonTitle" class="eng">ENG</button>
               </div>
               <div class="modal-kontaqti">
                 <a href="tel:(+995) 555 333 222" class="nom"
@@ -838,348 +882,350 @@
                 placeholder="ძაღლის საკვები"
                 class="liveSearch"
               />
-              <button class="searchbtn">
+              <button title="buttonTitle" class="searchbtn">
                 <img src="assets/images/search.png" alt="search" />
               </button>
             </form>
           </div>
           <div class="modal-categoriebi">
             <div class="categoriebi flex-row">
-                <button class="nav-tipebi mwvane">ძაღლები</button>
-                <button class="nav-tipebi">კატები</button>
-                <button class="nav-tipebi">თევზები</button>
-                <button class="nav-tipebi">ფრინველები</button>
-                <button class="nav-tipebi">მღრღნელები</button>
-                <button class="nav-tipebi">რეპტილიები</button>
+              <button title="buttonTitle" class="nav-tipebi mwvane">
+                ძაღლები
+              </button>
+              <button title="buttonTitle" class="nav-tipebi">კატები</button>
+              <button title="buttonTitle" class="nav-tipebi">თევზები</button>
+              <button title="buttonTitle" class="nav-tipebi">ფრინველები</button>
+              <button title="buttonTitle" class="nav-tipebi">მღრღნელები</button>
+              <button title="buttonTitle" class="nav-tipebi">რეპტილიები</button>
             </div>
             <div class="cxovelebistvis">
-              <div class="dzaglebi choose  ">
-                <img src="assets/images/pug.png" alt="pug" />
+              <div class="dzaglebi choose">
+                <img src="assets/images/pug.avif" alt="pug" />
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="">საქციელის კორეკტირება</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                    <li><a href="product.html">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html">საქციელის კორეკტირება</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html" id="seeall">ყველას ნახვა</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="product.html">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="product.html">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">ძაღლების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">ძაღლების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
               </div>
               <div class="katebi choose vanish">
-                <img src="assets/images/katebis-kata.png" alt="cat" />
+                <img src="assets/images/katebis-kata.avif" alt="cat" />
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="">საქციელის კორეკტირება</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html">საქციელის კორეკტირება</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html" id="seeall">ყველას ნახვა</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
               </div>
               <div class="tevzebi choose vanish">
-                <img src="assets/images/tevzi.png" alt="fish" />
+                <img src="assets/images/tevzi.avif" alt="fish" />
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="">საქციელის კორეკტირება</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html">საქციელის კორეკტირება</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html" id="seeall">ყველას ნახვა</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
               </div>
               <div class="frinvelebi choose vanish">
-                <img src="assets/images/bird.png" alt="fish" />
+                <img src="assets/images/bird.avif" alt="fish" />
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="">საქციელის კორეკტირება</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html">საქციელის კორეკტირება</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html" id="seeall">ყველას ნახვა</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
               </div>
               <div class="mgrgneli choose vanish">
-                <img src="assets/images/tagunia.png" alt="fish" />
+                <img src="assets/images/tagunia.avif" alt="fish" />
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="">საქციელის კორეკტირება</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html">საქციელის კორეკტირება</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html" id="seeall">ყველას ნახვა</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
               </div>
               <div class="reptiliebi choose vanish">
-                <img src="assets/images/qameleoni.png" alt="fish" />
+                <img src="assets/images/qameleoni.avif" alt="fish" />
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="">საქციელის კორეკტირება</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
-                    <li><a href="" id="seeall">ყველას ნახვა</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html">საქციელის კორეკტირება</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
+                    <li><a href="product.html" id="seeall">ყველას ნახვა</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 class="meoreDone">მეორე დონე</h3>
                   <ul>
-                    <li><a href="">კატების საფხაჭუნოები</a></li>
-                    <li><a href="">სამპუნები</a></li>
-                    <li><a href="">სავარცხლები</a></li>
-                    <li><a href="">მაკრატლები</a></li>
+                    <li><a href="product.html">კატების საფხაჭუნოები</a></li>
+                    <li><a href="product.html">სამპუნები</a></li>
+                    <li><a href="product.html">სავარცხლები</a></li>
+                    <li><a href="product.html">მაკრატლები</a></li>
                   </ul>
                 </div>
               </div>
